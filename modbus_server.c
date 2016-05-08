@@ -42,7 +42,11 @@ void
 usage()
 {
 	printf(
-"Usage: %s [-S host] [-P port] [-dh]\n"
+"Usage: %s [-S host] [-P port] [-m mode] [-dh]\n"
+"    -S: specifies the server name to be listened.\n"
+"    -P: specifies the port number to be listened.\n"
+"    -m: specifies the mode.\n"
+"        1: waving value.\n"
 	, prog_name);
 
 	exit(0);
