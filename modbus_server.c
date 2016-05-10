@@ -67,13 +67,13 @@ module01(void *param)
 	tv.tv_usec = 0;
 	while (1) {
 		select(0, NULL, NULL, NULL, &tv);
-		k = sin(t * D2R * 2) + 2 * sin(t * D2R) * 100;
+		k = (sin(t*D2R*3) + sin(t*D2R)) * 100;
 		_V_APP_VAL(map) = k + 100 * _V_APP_BASE(map);
 		if (f_debug > 2) {
 			printf("base=%u k=%f val=%u\n",
 			_V_APP_BASE(map), k, _V_APP_VAL(map));
 		}
-		t++;
+		t += 5;
 	}
 
 	return 0;
