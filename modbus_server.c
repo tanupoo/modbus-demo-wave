@@ -208,7 +208,7 @@ run(char *host, char *port, int mode)
 	if (f_debug > 2)
 		modbus_set_debug(ctx, TRUE);
 
-	if ((map = modbus_mapping_new(0, 0, 8, 8)) == NULL) {
+	if ((map = modbus_mapping_new(8, 8, 8, 8)) == NULL) {
 		modbus_free(ctx);
 		errx(1, "ERROR: %s: modbus_mapping_new(): %s",
 		    __FUNCTION__, modbus_strerror(errno));
