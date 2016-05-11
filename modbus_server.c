@@ -63,8 +63,8 @@ module01(void *param)
 #define _V_APP_BASE(m) ((m)->tab_registers[APP_BASE_ADDR])
 #define _V_APP_VAL(m) ((m)->tab_input_registers[APP_VAL_ADDR])
 
-	tv.tv_sec = 1;
-	tv.tv_usec = 0;
+	tv.tv_sec = 0;
+	tv.tv_usec = 200000;
 	while (1) {
 		select(0, NULL, NULL, NULL, &tv);
 		k = (sin(t*D2R*3) + sin(t*D2R)) * 100;
