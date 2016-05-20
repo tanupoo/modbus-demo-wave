@@ -74,6 +74,16 @@ The following instruction is an example for that.
     make install
     ~~~~
 
+actually, building libmodbus requires the following packages.
+so you need to install them before you build libmodbus.
+
+    autoconf
+    automake
+    libtool
+
+if you want to install libmodbus into uncommon place,
+also you have to consider the path for building the software of modbus.
+
 ### base value
 
 - register and address: Holding Register: 0
