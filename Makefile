@@ -7,3 +7,7 @@ CFLAGS += -g -Wall -Werror
 CPPFLAGS += -I../apps/include
 LDFLAGS += -L../apps/lib
 LDLIBS += -lmodbus
+
+ifeq ($(OS),Linux)
+    LDLIBS += -lm -lpthread
+endif
