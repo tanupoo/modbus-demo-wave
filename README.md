@@ -67,7 +67,7 @@ The following instruction is an example for that.
     ~~~~
     git clone https://github.com/tanupoo/libmodbus.git
     cd libmodbus
-    git checkout remotes/origin/listen_maddr
+    git checkout -b listen_maddr
     sh autogen.sh
     ./configure
     make
